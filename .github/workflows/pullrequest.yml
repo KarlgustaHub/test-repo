@@ -11,6 +11,6 @@ jobs:
     - name: "Assign Reviewers to PR"
       uses: itsOliverBott/assign-pr-reviewers@release
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT_FOR_AUTO_REQUEST_REVIEW }}
         users: "PatelN123, RakeshPotnuru, karlGusta" # comma-separated (example: "itsOliverBott, SantaClaus, b4tman, sp0derman")
         ignore-drafts: true # defaults to false if not provided
